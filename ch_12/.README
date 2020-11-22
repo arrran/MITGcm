@@ -1,0 +1,9 @@
+testing the automised input file in ocean_inputs.py 
+Nx = 20 
+Ny = 10 
+Nz = 30 
+dx = 473.4731413102081 
+dy = 177.77777777777783 
+model_input_folder = /home/whitefar/MITgcm-checkpoint66j/exp/ch_12/input/ 
+dZ = 22.0 
+Z = -660.0

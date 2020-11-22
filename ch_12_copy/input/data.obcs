@@ -1,0 +1,63 @@
+# ***************
+# Open boundaries
+# ***************
+ &OBCS_PARM01
+ OB_Jnorth =   210*-1,
+ OB_Jsouth =   210*0,
+ OB_Ieast  =   200*-1,
+ OB_Iwest  =   200*1,
+# OB_Ieast  =   106*0, 94*-1,
+# OB_Iwest  =   154*0, 46*1,
+#
+ useOBCSprescribe =.TRUE.,
+ useOBCSbalance=.TRUE.,
+# useOBCSsponge    =.TRUE.,
+ OBCSsponge_UatNS =.FALSE.
+ OBCSsponge_VatEW =.FALSE.
+#
+ OBNsFile='OB_N_s.bin',
+ OBNtFile='OB_N_t.bin',
+ OBNuFile='OB_N_u.bin',
+ OBNvFile='OB_N_v.bin',
+#
+ OBEsFile='OB_E_s.bin',
+ OBEtFile='OB_E_t.bin',
+ OBEuFile='OB_E_u.bin',
+ OBEvFile='OB_E_v.bin',
+#
+ OBWsFile='OB_W_s.bin',
+ OBWtFile='OB_W_t.bin',
+ OBWuFile='OB_W_u.bin',
+ OBWvFile='OB_W_v.bin',
+#
+ OBNaFile= 'OB_N_a.bin',
+ OBNhFile= 'OB_N_h.bin',
+# OBNslFile='OB_N_sl.bin',
+ OBNsnFile='OB_N_sh.bin',
+ OBNuiceFile='OB_N_uice.bin',
+ OBNviceFile='OB_N_vice.bin',
+#
+ OBEaFile='OB_E_a.bin',
+ OBEhFile='OB_E_h.bin',
+# OBEslFile='OB_E_sl.bin',
+ OBEsnFile='OB_E_sh.bin',
+ OBEuiceFile='OB_E_uice.bin',
+ OBEviceFile='OB_E_vice.bin',
+#
+ OBWaFile='OB_W_a.bin',
+ OBWhFile='OB_W_h.bin',
+# OBWslFile='OB_W_sl.bin',
+ OBWsnFile='OB_W_sh.bin',
+ OBWuiceFile='OB_W_uice.bin',
+ OBWviceFile='OB_W_vice.bin',
+ &
+# *****************************************
+# Sponge Layer Parameters.
+# *****************************************
+ &OBCS_PARM03
+ Urelaxobcsinner=1296000.E0,
+ Urelaxobcsbound=43200.E0,
+ Vrelaxobcsinner=1296000.E0,
+ Vrelaxobcsbound=43200.E0,
+ spongeThickness=3,
+ &

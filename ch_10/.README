@@ -1,0 +1,9 @@
+Trying to run a 100x50 grid using ocean_inputs.py 
+Nx = 100 
+Ny = 50 
+Nz = 50 
+dx = 90.86858267569642 
+dy = -32.65306122448976 
+model_input_folder = /home/whitefar/MITgcm-checkpoint66j/exp/ch_10/input/ 
+dZ = 13.0 
+Z = -650.0

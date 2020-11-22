@@ -1,0 +1,12 @@
+NCX, NetCDF eXplorer
+20-12-2005
+
+Installation instructions:
+
+   1. Unpack the file. The folder ncx is created
+   2. Add the folder ncx to the matlab path
+   3. Execute ncx at the matlab prompt
+
+The Netcdf Matlab interface is included and automatically ready for use (for Windows and Linux).
+
+If you find problems or have doubts/comments, use my email martinho@fis.ua.pt 

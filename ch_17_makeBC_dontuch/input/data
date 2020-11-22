@@ -1,0 +1,110 @@
+# ====================
+# | Model parameters |
+# ====================
+#
+# Continuous equation parameters
+ &PARM01
+ Tref = 80*-2.1,   
+ Sref = 80*34.5,   
+
+ viscAz=1.E-4,
+ no_slip_sides=.FALSE.,
+ no_slip_bottom=.true.,
+ diffKzT=5.E-6,
+ diffKzS=5.E-6,
+ rhoConst=1030.,
+ rhoConst= 1.028900e+03,
+ rhoNil= 1.028900e+03,
+ rhoConstFresh=999.8,
+ eosType='JMD95Z',
+ hFacMin=0.3,
+ hFacInf=0.1,
+ hFacSup=5.0,
+# select_rStar=2,
+# nonlinFreeSurf=4,
+ implicitDiffusion=.TRUE.,
+ implicitViscosity=.TRUE.,
+ viscC4Leith=2.0,
+ viscC4Leithd=2.0,
+ useAreaViscLength=.TRUE.,
+ sideDragFactor=0.,
+ highOrderVorticity  = .TRUE.,
+ bottomDragQuadratic=2.1E-3,
+ tempAdvScheme=7,
+ saltAdvScheme=7,
+ StaggerTimeStep=.TRUE.,
+ multiDimAdvection=.TRUE.,
+ vectorInvariantMomentum=.TRUE.,
+ implicitFreeSurface=.TRUE.,
+  exactConserv=.TRUE.,
+  convertFW2Salt = 33.4,
+# selectBotDragQuadr=2,
+# useCDScheme = .TRUE.,
+# useJamartWetPoints=.TRUE., 
+# HeatCapacity_Cp = 3974.,
+# gravity=9.81,
+# implicitFreeSurface=.TRUE.,
+ readBinaryPrec=64,
+#writeBinaryPrec=64,
+ useSingleCpuIO=.TRUE.,
+ debugLevel=-1,
+ plotLevel =0,
+ &
+
+# Elliptic solver parameters
+ &PARM02
+ cg2dMaxIters=1000,
+ cg2dTargetResidual=1.E-13,
+ cg3dMaxIters=400,
+ cg3dTargetResidual=1.E-13,
+ &
+
+# Time stepping parameters
+ &PARM03
+ nIter0=0,
+ endTime=15552000.0,    
+ deltaT=40,   
+ abEps=0.1,
+ momDissip_In_AB=.FALSE.,
+#cAdjFreq = -1.,
+#tauCD = 400000.0,
+ pChkptFreq=604800.0,   
+ chkptFreq=604800.0,   
+ dumpFreq=604800.0,   
+ monitorSelect=2,
+ monitorFreq=86400.0,   
+# for time dependent open boundary conditions, activate the following 3 lines:
+ periodicExternalForcing=.TRUE.,
+ externForcingPeriod=2629800.0,
+ externForcingCycle =31557600.0,
+# externForcingPeriod=100.0,
+# externForcingCycle =1200.0,
+
+
+ &
+
+# Gridding parameters
+ &PARM04
+ usingCartesianGrid=.TRUE.,
+ dXspacing=90.86858267569642,   
+ dYspacing=44.89795918367349,   
+ ygOrigin = -80.0,
+# usingSphericalPolarGrid=.TRUE.,
+# delX=50*0.1,
+# delY=50*0.1,
+ delZ=80*8.0,   
+#-
+ pCellMix_select= 20,
+ pCellMix_delR  = 20.,
+# interViscAr_pCell = .TRUE.,
+# interDiffKr_pCell = .TRUE.,
+ pCellMix_viscAr = 80*4.e-4,   
+ pCellMix_diffKr = 80*2.e-4,   
+# current default: diffKzT=5.E-5, viscAz=1.E-3,
+ &
+
+# Input datasets
+ &PARM05
+ bathyFile='bathybox',
+ &
+6048

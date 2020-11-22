@@ -1,0 +1,13 @@
+op# ===================================
+# | Parameters for SHELFICE package |
+# ===================================
+ &SHELFICE_PARM01
+ SHELFICEboundaryLayer = .TRUE.,
+ SHELFICEtopoFile='icetopo.ch5',
+ SHELFICEloadAnomalyFile = 'phi0surf.ch5',
+ SHELFICEconserve = .TRUE.,
+ no_slip_shelfice = .false.,
+ SHELFICEwriteState = .TRUE.,
+ SHELFICEuseGammaFrict = .TRUE.,
+ shiCdrag          = 0.0050,
+ &

@@ -1,0 +1,9 @@
+Higher res with ocean_inputs.py 
+Nx = 100 
+Ny = 50 
+Nz = 80 
+dx = 90.86858267569642 
+dy = 32.65306122448976 
+model_input_folder = /home/whitefar/MITgcm-checkpoint66j/exp/ch_14/input/ 
+dZ = 8.0 
+Z = -640.0
