@@ -1,0 +1,44 @@
+# ***************
+# Open boundaries
+# ***************
+ &OBCS_PARM01
+# OB_Jnorth =   100*-1,
+# OB_Jsouth =   100*0,
+ OB_Ieast  =   50*-1,
+# OB_Iwest  =   50*1,
+
+#
+ useOBCSprescribe =.TRUE.,
+# useOBCSbalance=.TRUE.,
+# useOBCSsponge    =.TRUE.,
+# OBCS_balanceFacE=-1.,
+# OBCSsponge_UatNS =.FALSE.
+# OBCSsponge_VatEW =.FALSE.
+#
+# OBNsFile='OB_N_s.bin',
+# OBNtFile='OB_N_t.bin',
+# OBNuFile='OB_N_u.bin',
+# OBNvFile='OB_N_v.bin',
+#
+ OBEsFile='BC_e_S',
+ OBEtFile='BC_e_T',
+# OBEuFile='BC_e_U',
+# OBEvFile='OB_E_v.bin',
+#
+# OBWsFile='OB_W_s.bin',
+# OBWtFile='OB_W_t.bin',
+# OBWuFile='OB_W_u.bin',
+# OBWvFile='OB_W_v.bin',
+#
+ 
+ &
+# *****************************************
+#  Sponge-bob Layer Parameters.
+# *****************************************
+ &OBCS_PARM03
+ Urelaxobcsinner=2592000.E0,
+ Urelaxobcsbound=86400.E0,
+ Vrelaxobcsinner=2592000.E0,
+ Vrelaxobcsbound=86400.E0,
+ spongeThickness=3,
+ &

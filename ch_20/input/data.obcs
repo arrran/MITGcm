@@ -10,7 +10,7 @@
 #
  useOBCSprescribe =.TRUE.,
  useOBCSbalance=.TRUE.,
-# useOBCSsponge    =.TRUE.,
+ useOBCSsponge    =.TRUE.,
  OBCS_balanceFacE=-1.,
 # OBCSsponge_UatNS =.FALSE.
 # OBCSsponge_VatEW =.FALSE.
