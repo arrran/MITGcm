@@ -4,8 +4,8 @@
 #
 # Continuous equation parameters
  &PARM01
- Tref = 80*-2.1,   
- Sref = 80*34.5,   
+ Tref = 30*-2.1,   
+ Sref = 30*34.5,   
 
  viscAz=1.E-4,
  no_slip_sides=.FALSE.,
@@ -63,7 +63,7 @@
  &PARM03
  nIter0=0,
  endTime=11232000,    
- deltaT=40,   
+ deltaT=100,   
  abEps=0.1,
  momDissip_In_AB=.FALSE.,
 #cAdjFreq = -1.,
@@ -75,8 +75,8 @@
  monitorFreq=400.0,   
 # for time dependent open boundary conditions, activate the following 3 lines:
  periodicExternalForcing=.TRUE.,
- externForcingPeriod=2629800.0,
- externForcingCycle =31557600.0,
+ externForcingPeriod=86400.0,
+ externForcingCycle =1036800.0,
 # externForcingPeriod=100.0,
 # externForcingCycle =1200.0,
 
@@ -86,20 +86,20 @@
 # Gridding parameters
  &PARM04
  usingCartesianGrid=.TRUE.,
- dXspacing=90.86858267569642,   
- dYspacing=44.89795918367349,   
+ dXspacing=473.4731413102081,   
+ dYspacing=177.77777777777783,   
  ygOrigin = -80.0,
 # usingSphericalPolarGrid=.TRUE.,
 # delX=50*0.1,
 # delY=50*0.1,
- delZ=80*8.0,   
+ delZ=30*22.0,   
 #-
  pCellMix_select= 20,
  pCellMix_delR  = 20.,
 # interViscAr_pCell = .TRUE.,
 # interDiffKr_pCell = .TRUE.,
- pCellMix_viscAr = 80*4.e-4,   
- pCellMix_diffKr = 80*2.e-4,   
+ pCellMix_viscAr = 30*4.e-4,   
+ pCellMix_diffKr = 30*2.e-4,   
 # current default: diffKzT=5.E-5, viscAz=1.E-3,
  &
 

@@ -1,4 +1,4 @@
 #define THISVER 'checkpoint66j'
 #define THISUSER 'whitefar'
-#define THISDATE 'Mon Nov 23 13:58:39 NZDT 2020'
+#define THISDATE 'Tue Nov 24 19:48:06 NZDT 2020'
 #define THISHOST 'kahutea'

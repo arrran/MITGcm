@@ -1,8 +1,0 @@
-# Packages
- &PACKAGES
- useShelfIce=.TRUE.,
-# useDiagnostics=.TRUE.,
-  useCAL   = .TRUE., 
-  useOBCS        = .TRUE.,
- 
- &

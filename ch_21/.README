@@ -1,9 +1,9 @@
-Copy of 17 but U=0 on the BC
-Nx = 100 
-Ny = 50 
-Nz = 80 
-dx = 90.86858267569642 
-dy = 44.89795918367349 
-model_input_folder = /home/whitefar/MITgcm-checkpoint66j/exp/ch_16/input/ 
-dZ = 8.0 
-Z = -640.0
+First run simple model then add BC 
+Nx = 20 
+Ny = 10 
+Nz = 30 
+dx = 473.4731413102081 
+dy = 177.77777777777783 
+model_input_folder = /home/whitefar/MITgcm-checkpoint66j/exp/ch_21/input/ 
+dZ = 22.0 
+Z = -660.0

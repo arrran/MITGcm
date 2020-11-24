@@ -326,17 +326,17 @@ CEOP
       INTEGER Ny
       INTEGER Nr
       PARAMETER (
-     &           sNx =  20,
-     &           sNy =  10,
+     &           sNx =  10,
+     &           sNy =  5,
      &           OLx =   5,
      &           OLy =   5,
      &           nSx =   1,
      &           nSy =   1,
-     &           nPx =   5,
-     &           nPy =   5,
+     &           nPx =   2,
+     &           nPy =   2,
      &           Nx  = sNx*nSx*nPx,
      &           Ny  = sNy*nSy*nPy,
-     &           Nr  =  80)
+     &           Nr  =  30)
 
 C     MAX_OLX :: Set to the maximum overlap region size of any array
 C     MAX_OLY    that will be exchanged. Controls the sizing of exch
@@ -1007,7 +1007,7 @@ CEOP
       CALL PRINT_MESSAGE( msgBuf, standardMessageUnit,
      &     SQUEEZE_RIGHT , 1)
       WRITE(msgBuf,'(2A)') '// Build date:        ',
-     &     'Mon Nov 23 13:58:39 NZDT 2020'
+     &     'Tue Nov 24 19:48:06 NZDT 2020'
       CALL PRINT_MESSAGE( msgBuf, standardMessageUnit,
      &     SQUEEZE_RIGHT , 1)
 

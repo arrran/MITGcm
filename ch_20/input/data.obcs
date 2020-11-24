@@ -9,8 +9,8 @@
 
 #
  useOBCSprescribe =.TRUE.,
- useOBCSbalance=.TRUE.,
- useOBCSsponge    =.TRUE.,
+# useOBCSbalance=.TRUE.,
+# useOBCSsponge    =.TRUE.,
  OBCS_balanceFacE=-1.,
 # OBCSsponge_UatNS =.FALSE.
 # OBCSsponge_VatEW =.FALSE.
@@ -22,7 +22,7 @@
 #
  OBEsFile='BC_e_S',
  OBEtFile='BC_e_T',
- OBEuFile='BC_e_U',
+# OBEuFile='BC_e_U',
 # OBEvFile='OB_E_v.bin',
 #
 # OBWsFile='OB_W_s.bin',

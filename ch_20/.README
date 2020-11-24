@@ -1,9 +1,11 @@
-copy of ch_17 but trying to get sponge turned on.
+
+U T and S BC turned on. Correct dimensions of BC file. no sponge
+
 Nx = 100 
 Ny = 50 
 Nz = 80 
 dx = 90.86858267569642 
 dy = 44.89795918367349 
-model_input_folder = /home/whitefar/MITgcm-checkpoint66j/exp/ch_16/input/ 
+model_input_folder = /home/whitefar/MITgcm-checkpoint66j/exp/ch_19/input/ 
 dZ = 8.0 
 Z = -640.0

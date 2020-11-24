@@ -75,8 +75,9 @@
  monitorFreq=400.0,   
 # for time dependent open boundary conditions, activate the following 3 lines:
  periodicExternalForcing=.TRUE.,
- externForcingPeriod=2629800.0,
- externForcingCycle =31557600.0,
+ externForcingPeriod=86400.0,
+ externForcingCycle =1036800.0,
+ diagFreq=86400.0,
 # externForcingPeriod=100.0,
 # externForcingCycle =1200.0,
 
