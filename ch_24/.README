@@ -1,0 +1,9 @@
+Med res copy of ch_23 
+Nx = 40 
+Ny = 20 
+Nz = 60 
+dx = 230.6664021767681 
+dy = 84.21052631578948 
+model_input_folder = /home/whitefar/MITgcm-checkpoint66j/exp/ch_24/input/ 
+dZ = 11.0 
+Z = -660.0
