@@ -4,7 +4,7 @@
  &OBCS_PARM01
 # OB_Jnorth =   100*-1,
 # OB_Jsouth =   100*0,
- OB_Ieast  =   50*-1,
+ OB_Ieast  =   10*-1,   
 # OB_Iwest  =   50*1,
 
 #

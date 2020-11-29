@@ -62,21 +62,23 @@
 # Time stepping parameters
  &PARM03
  nIter0=0,
- endTime=7776000.0,    
- deltaT=20,   
+ endTime=2592000.0,    
+ deltaT=100,   
  abEps=0.1,
  momDissip_In_AB=.FALSE.,
 #cAdjFreq = -1.,
 #tauCD = 400000.0,
- pChkptFreq=2592000.0,   
- chkptFreq=2592000.0,   
- dumpFreq=2592000.0,   
+ pChkptFreq=432000.0,   
+ chkptFreq=432000.0,   
+ dumpFreq=432000.0,   
  monitorSelect=2,
- monitorFreq=604800.0,   
+ monitorFreq=86400.0,   
 # for time dependent open boundary conditions, activate the following 3 lines:
  periodicExternalForcing=.TRUE.,   
- externForcingPeriod=2629800.0,   
- externForcingCycle =31557600.0,   
+ externForcingPeriod=86400.0,   
+ externForcingCycle =1036800.0,   
+
+
  &
 
 # Gridding parameters

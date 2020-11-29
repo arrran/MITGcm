@@ -1,7 +1,7 @@
 # Multithreaded + multi-processing makefile for:
 #    Linux kahutea 4.15.0-74-generic #83~16.04.1-Ubuntu SMP Wed Dec 18 04:56:23 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
 # This makefile was generated automatically on
-#    Wed Nov 25 14:08:53 NZDT 2020
+#    Wed Nov 25 15:50:44 NZDT 2020
 # by the command:
 #    ../../../tools/genmake2 --mpi -mods ../code -optfile ../../../tools/build_options/linux_amd64_gfortran
 # executed by:
@@ -1382,7 +1382,7 @@ BUILD_INFO.h:
 	@echo Creating $@ ...
 	-echo "#define THISVER 'checkpoint66j'" > $@
 	-echo "#define THISUSER 'whitefar'" >> $@
-	-echo "#define THISDATE 'Wed Nov 25 14:08:53 NZDT 2020'" >> $@
+	-echo "#define THISDATE 'Wed Nov 25 15:50:44 NZDT 2020'" >> $@
 	-echo "#define THISHOST 'kahutea'" >> $@
 
 # The normal chain of rules is (  .F - .f - .o  )

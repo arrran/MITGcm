@@ -1,7 +1,7 @@
 # Multithreaded + multi-processing makefile for:
 #    Linux kahutea 4.15.0-74-generic #83~16.04.1-Ubuntu SMP Wed Dec 18 04:56:23 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
 # This makefile was generated automatically on
-#    Thu Nov 19 13:11:11 NZDT 2020
+#    Mon Nov 30 12:09:29 NZDT 2020
 # by the command:
 #    ../../../tools/genmake2 --mpi -mods ../code -optfile ../../../tools/build_options/linux_amd64_gfortran
 # executed by:
@@ -1156,6 +1156,7 @@ H_SRC_FILES =  \
  OBCS_OPTIONS.h \
  SEAICE_OPTIONS.h \
  SIZE.h \
+ SIZE_worked.h \
  cal.h \
  CAL_OPTIONS.h \
  cd_code_ad_check_lev1_dir.h \
@@ -1382,7 +1383,7 @@ BUILD_INFO.h:
 	@echo Creating $@ ...
 	-echo "#define THISVER 'checkpoint66j'" > $@
 	-echo "#define THISUSER 'whitefar'" >> $@
-	-echo "#define THISDATE 'Thu Nov 19 13:11:11 NZDT 2020'" >> $@
+	-echo "#define THISDATE 'Mon Nov 30 12:09:29 NZDT 2020'" >> $@
 	-echo "#define THISHOST 'kahutea'" >> $@
 
 # The normal chain of rules is (  .F - .f - .o  )
@@ -1846,7 +1847,7 @@ ini_masks_etc.o: ini_masks_etc.f
 
 
 #  These files are linked from ../code ( aka ../code )
- CPP_OPTIONS.h DIAGNOSTICS_SIZE.h DIAG_OPTIONS.h EXF_OPTIONS.h OBCS_OPTIONS.h SEAICE_OPTIONS.h SIZE.h :
+ CPP_OPTIONS.h DIAGNOSTICS_SIZE.h DIAG_OPTIONS.h EXF_OPTIONS.h OBCS_OPTIONS.h SEAICE_OPTIONS.h SIZE.h SIZE_worked.h :
 	if [ ! -L $@ ]; then $(LN) ../code/$@ $@; fi
 
 #  These files are linked from $(ROOTDIR)/pkg/cal ( aka ../../../pkg/cal )
